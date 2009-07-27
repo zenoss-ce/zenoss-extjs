@@ -35,7 +35,7 @@ $(EXTSRCDIR): $(ZIPFILE)
 ext-download: $(EXTSRCDIR)
 
 ext-install: 
-	for d in src/adapter src/direct src/core src/data src/dd \
+	for d in adapter src/direct src/core src/data src/dd \
 		ext-all.js license.txt src/locale resources  \
 		src/state src/util src/widgets; do \
 		mv $(EXTSRCDIR)/ext-$(EXTVERSION)/$${d} $(SRCDIR); done

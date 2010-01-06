@@ -1,8 +1,7 @@
 from setuptools import setup, find_packages
-import os
 
 DESCRIPTION = "A Zope package providing ExtJS as a browser resource"
-version = '3.0.3.0'
+version = '3.1.0.0'
 
 setup(name='zenoss.extjs',
       version=version,

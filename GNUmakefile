@@ -23,7 +23,7 @@ $(EXTSRCDIR): $(BUILD)
 ext-install: 
 	for d in adapter src/direct src/core src/data src/dd \
 		ext-all.js ext-all-debug.js license.txt src/locale resources  \
-		src/state src/util src/widgets; do \
+		src/state src/util src/widgets examples/ux/treegrid; do \
 		mv $(EXTSRCDIR)/ext-$(EXTVERSION)/$${d} $(SRCDIR); done
 	@mv $(SRCDIR)/adapter $(SRCDIR)/adapters
 

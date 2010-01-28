@@ -15,7 +15,7 @@ If this package contains a GNUmakefile, you can build a Python package
 containing the Ext source. If it does not, you already have the source.
 
 To download the Ext source and build the package, simply run 'make'. The
-artifact will be created under dist/zenoss.extjs-2.2.1.tar.gz.
+artifact will be created under dist/zenoss.extjs-<version>.tar.gz.
 
 
 INSTALLATION

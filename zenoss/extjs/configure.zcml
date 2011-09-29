@@ -1,11 +1,14 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
     xmlns:browser="http://namespaces.zope.org/browser"
-    >
+    xmlns:meta="http://namespaces.zope.org/meta">
 
-   <browser:resourceDirectory
-        name="extjs"
-        directory="src"
-        />
+
+  <meta:provides feature="extjs4" />
+
+  <browser:resourceDirectory
+      name="extjs"
+      directory="src"
+      />
 
 </configure>

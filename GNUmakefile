@@ -23,7 +23,7 @@ $(EXTSRCDIR): $(BUILD)
 ext-install:
 	for d in src \
 		ext.js ext-all.js ext-all-debug.js ext-all-dev.js license.txt resources examples;  do \
-		cp -r $(EXTSRCDIR)/ext-$(EXTVERSION)/$${d} $(SRCDIR); done
+		cp -r $(EXTSRCDIR)/extjs-$(EXTVERSION)/$${d} $(SRCDIR); done
 
 
 ext: $(EXTSRCDIR) ext-install
@@ -35,4 +35,3 @@ clean:
 	@cd $(PKGDIR)
 	@$(PYTHON) setup.py clean
 	@rm -rf $(SRCDIR)/* $(BUILD) $(DIST)
-

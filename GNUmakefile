@@ -19,6 +19,7 @@ $(BUILD):
 $(EXTSRCDIR): $(BUILD)
 	@mkdir -p $@
 	@unzip $(ZIPFILE) -d $@
+	mv $(EXTSRCDIR)/ext-$(EXTVERSION).* $(EXTSRCDIR)/extjs-$(EXTVERSION)
 
 ext-install:
 	for d in src \
